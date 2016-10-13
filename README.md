@@ -28,4 +28,7 @@ Mine: displaying user information, such as history. so further refer to the fold
 
 view: it relates to the custom control.
 
+
+In addition, the feature of user statistics is supported by Umeng server in China which provides some sdk. 
+
 ps: if you want to refer to the server code, please also view another repository: VOD-Store-server.
