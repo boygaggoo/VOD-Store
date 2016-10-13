@@ -13,6 +13,7 @@ service: the app send http request to server to pull viode sources which are sto
 
 
 the follow folds are related to the UI.
+
 navigation: it is in the home launcher page to manage the show of video source, and the data is dynamicly pulled from server, such as Recommend, Top, Share, All,MIne.
 
 recommend: the ui show some recommend video by daily job.
