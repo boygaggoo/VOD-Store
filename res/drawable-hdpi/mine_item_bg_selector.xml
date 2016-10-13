@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_focused="true">
+        <shape>
+            <!-- 圆角 -->
+            <corners android:radius="40dip"/>
+            <!-- 实心 -->
+            <solid android:color="#ffcc66"/>
+            <!-- 描边 -->
+            <stroke
+                android:width="2dp"
+                android:color="#ffffff"/>
+        </shape>
+    </item>
+
+    <item android:state_hovered="true">
+        <shape>
+            <!-- 圆角 -->
+            <corners android:radius="40dip"/>
+            <!-- 实心 -->
+            <solid android:color="#ffcc66"/>
+            <!-- 描边 -->
+            <stroke
+                android:width="2dp"
+                android:color="#ffffff"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <!-- 圆角 -->
+            <corners android:radius="40dip"/>
+            <!-- 实心 -->
+            <solid android:color="#cc5256"/>
+            <!-- 描边 -->
+            <stroke
+                android:width="2dp"
+                android:color="#ffffff"/>
+        </shape>
+    </item>
+</selector>

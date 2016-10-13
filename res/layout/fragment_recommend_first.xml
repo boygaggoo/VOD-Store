@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:adItemLayout="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    >
+
+
+    <com.cookingshow.view.AdItemLayout
+        android:id="@+id/ad_layout_1"
+        android:layout_width="@dimen/first_ad_item_layout_width"
+        android:layout_height="@dimen/first_ad_item_layout_height"
+        adItemLayout:adType="index1"
+        />
+
+    <com.cookingshow.view.AdItemLayout
+        android:id="@+id/ad_layout_2"
+        android:layout_width="@dimen/ad_item_layout_width"
+        android:layout_height="@dimen/ad_item_layout_height"
+        android:layout_alignTop="@id/ad_layout_1"
+        android:layout_toRightOf="@id/ad_layout_1"
+        android:layout_marginLeft="@dimen/ad_item_layout_margin_left"
+        adItemLayout:adType="index2"
+        />
+
+    <com.cookingshow.view.AdItemLayout
+        android:id="@+id/ad_layout_4"
+        android:layout_width="@dimen/ad_item_layout_width"
+        android:layout_height="@dimen/ad_item_layout_height"
+        android:layout_alignLeft="@id/ad_layout_2"
+        android:layout_below="@id/ad_layout_2"
+        android:layout_marginTop="@dimen/ad_item_layout_margin_top"
+        adItemLayout:adType="index2"
+        />
+
+    <com.cookingshow.view.AdItemLayout
+        android:id="@+id/ad_layout_3"
+        android:layout_width="@dimen/ad_item_layout_width"
+        android:layout_height="@dimen/ad_item_layout_height"
+        android:layout_alignTop="@id/ad_layout_1"
+        android:layout_toRightOf="@id/ad_layout_2"
+        android:layout_marginLeft="@dimen/ad_item_layout_margin_left"
+        adItemLayout:adType="index2"
+        />
+
+    <com.cookingshow.view.AdItemLayout
+        android:id="@+id/ad_layout_5"
+        android:layout_width="@dimen/ad_item_layout_width"
+        android:layout_height="@dimen/ad_item_layout_height"
+        android:layout_alignLeft="@id/ad_layout_3"
+        android:layout_below="@id/ad_layout_3"
+        android:layout_marginTop="@dimen/ad_item_layout_margin_top"
+        adItemLayout:adType="index2"
+        />
+
+    <!--        <com.lenovo.tv.appstore.activities.view.AdItemLayout
+                android:id="@+id/ad_layout_6"
+                android:layout_width="514dp"
+                android:layout_height="261dp"
+                android:layout_alignLeft="@id/ad_layout_4"
+                android:layout_below="@id/ad_layout_5"
+                android:layout_marginTop="-28dp"
+                adItemLayout:adType="index2"
+                />-->
+
+    <include layout="@layout/tv_loading"/>
+
+    <TextView
+        android:id="@+id/tv_no_data_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:text="@string/tv_nodata"
+        android:textSize="40sp"
+        android:visibility="gone"/>
+
+    <com.cookingshow.view.ItemCursorView
+        android:id="@+id/cursor_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>
