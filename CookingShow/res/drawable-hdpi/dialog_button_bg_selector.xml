@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
- 	<item android:drawable="@drawable/index_button_bg_press" android:state_enabled="true" android:state_hovered="true" android:state_pressed="false"/>
-    <item android:drawable="@drawable/index_button_bg_press"  android:state_enabled="true" android:state_focused="true" android:state_pressed="false"/>
-    <item android:drawable="@drawable/index_button_bg_press"  android:state_focused="false" android:state_pressed="true"/>
-    <item android:drawable="@drawable/dialog_btn_bg_normal"/>
-</selector>
