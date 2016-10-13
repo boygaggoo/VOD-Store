@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <com.cookingshow.view.RoundedImageView
+        android:id="@+id/ad_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:riv_corner_radius="@dimen/ad_item_riv_corner_radius"
+        app:riv_oval="false"
+        />
+
+    <RelativeLayout
+        android:id="@+id/ad_index_type1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ad_item_index_type_layout_height"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="@drawable/ad_shadow_1"
+        >
+
+        <com.cookingshow.view.CommonTextView
+            android:id="@+id/ad_type1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ad_type1_subname"
+            android:layout_marginBottom="@dimen/ad_item_type_name_layout_margin_bottom"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/ad_item_type_name_text_size"
+            android:paddingLeft="@dimen/ad_item_text_padding_left"
+            />
+
+        <com.cookingshow.view.CommonTextView
+            android:id="@+id/ad_type1_subname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/ad_item_type_sub_name_layout_margin_bottom"
+            android:paddingLeft="@dimen/ad_item_text_padding_left"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="@dimen/ad_item_type_sub_name_text_size"
+            />
+
+    </RelativeLayout>
+
+
+    <com.cookingshow.view.CommonTextView
+        android:id="@+id/ad_index_type2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ad_item_index_type_layout_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ad_shadow_2"
+        android:gravity="bottom"
+        android:visibility="gone"
+        android:paddingBottom="@dimen/ad_item_type_sub_name_layout_margin_bottom"
+        android:paddingLeft="@dimen/ad_item_text_padding_left"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#f7f5f7"
+        android:textSize="@dimen/ad_item_type2_name_text_size"
+        />
+
+    <com.cookingshow.view.CommonTextView
+        android:id="@+id/ad_top_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ad_item_layout_margin_left"
+        android:layout_marginTop="@dimen/ad_item_layout_margin_top"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#ffcc66"
+        android:textSize="@dimen/ad_item_type_name_text_size"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+    <com.cookingshow.view.CommonTextView
+        android:id="@+id/ad_top_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ad_item_index_type_layout_height"
+        android:background="@drawable/ad_shadow_2"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/ad_item_text_padding_left"
+        android:paddingTop="@dimen/ad_item_top_text_padding_top"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#f7f5f7"
+        android:textSize="@dimen/ad_item_type2_name_text_size"
+        android:visibility="gone"
+        />
+
+</merge>

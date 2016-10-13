@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/share_list_item"
+    android:background="@drawable/item_bg_selector"
+    android:orientation="horizontal"
+    >
+    
+    <com.cookingshow.view.RoundedImageView
+        android:id="@+id/item_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_share_item_img_layout_height"
+        android:scaleType="fitXY"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:riv_corner_radius="@dimen/ad_item_riv_corner_radius"
+        app:riv_oval="false"
+        />
+    
+    <RelativeLayout
+        android:id="@+id/item_index"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/ad_item_index_type_layout_height"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:background="@drawable/ad_shadow_1"
+        >
+
+        <com.cookingshow.view.CommonTextView
+            android:id="@+id/item_index_uploader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/app_share_text_size"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</RelativeLayout>

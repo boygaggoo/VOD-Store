@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background">
+
+    <TextView
+        android:id="@+id/app_icon"
+        android:layout_width="@dimen/app_icon_width"
+        android:layout_height="@dimen/app_icon_height"
+        android:background="@drawable/icon_title"
+        android:layout_marginLeft="@dimen/app_icon_margin_left"
+        android:layout_marginTop="@dimen/app_icon_margin_top"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/share_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/app_icon"
+        android:layout_marginLeft="@dimen/app_name_margin_left"
+        android:layout_alignBottom="@id/app_icon"
+        android:textSize="@dimen/app_name_text_size"
+        android:textColor="#ffcc66"
+        android:focusable="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/share_title"
+        android:layout_marginTop="@dimen/app_share_layout_margin_top"
+        android:layout_marginLeft="@dimen/app_share_layout_margin_left"
+        android:layout_marginRight="@dimen/app_share_layout_margin_right"
+        android:orientation="horizontal" >
+        
+        <ListView
+            android:id="@+id/app_share_listView"
+            android:listSelector="@drawable/item_bg_selector"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#ffffff"
+            android:dividerHeight="0dp"
+            android:layout_weight="7" >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/app_share_layout_margin_left"
+            android:layout_marginRight="@dimen/app_share_layout_margin_right"
+            android:orientation="vertical"
+            android:layout_weight="2" >
+
+            <com.cookingshow.view.RoundedImageView
+                android:id="@+id/share_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_share_img_layout_height"
+                android:scaleType="fitXY"
+                app:riv_corner_radius="@dimen/ad_item_riv_corner_radius"
+                app:riv_oval="false"
+                android:layout_gravity="center"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/app_share_layout_margin_top"
+                >
+
+                <TextView
+                    android:id="@+id/uploader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/app_share_text_size" />
+
+                <TextView
+                    android:id="@+id/upload_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/app_share_layout_margin_left"
+                    android:layout_toRightOf="@id/uploader"
+                    android:textSize="@dimen/app_share_text_size" />
+                
+            </RelativeLayout>
+            
+            <TextView
+                android:id="@+id/uploader_feel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/app_share_layout_margin_top"
+                android:textSize="@dimen/app_share_text_size" />
+
+            <com.cookingshow.view.BigButton
+                android:id="@+id/btn_share_like"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/big_button_height"
+                android:layout_marginTop="@dimen/app_share_layout_margin_top"
+                app:text_font="@dimen/big_button_text_size"
+                app:button_icon="@drawable/icon_thumbs_up"
+                app:button_text="@string/thumber_up"
+                app:text_color="#ffffff"
+                android:background="@drawable/index_search_btn_bg_selector"
+                android:layout_gravity="center"
+                />
+             
+        </LinearLayout>
+ 
+    </LinearLayout>
+
+</RelativeLayout>

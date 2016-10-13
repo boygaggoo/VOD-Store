@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/fragment_layout_margin_top"
+    >
+
+    <com.cookingshow.view.PagerRelativeLayout
+        android:id="@+id/app_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:layout_marginTop="@dimen/pager_relative_layout_margin_top"
+        >
+
+        <com.cookingshow.view.CustomViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="@dimen/custom_view_pager_layout_width"
+            android:layout_height="@dimen/custom_view_pager_layout_height"
+            android:layout_marginLeft="@dimen/custom_view_pager_layout_margin_left"
+            android:layout_marginTop="@dimen/custom_view_pager_layout_margin_top"
+            android:clipChildren="false"
+            />
+    </com.cookingshow.view.PagerRelativeLayout>
+
+    <TextView
+        android:id="@+id/page_preview_view"
+        android:layout_width="@dimen/page_preview_view_layout_width"
+        android:layout_height="@dimen/page_preview_view_layout_height"
+        android:layout_marginTop="@dimen/page_preview_view_layout_margin_top"
+        android:background="@drawable/page_arrow_left_bg_selector"
+        android:clickable="true"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/page_next_view"
+        android:layout_width="@dimen/page_preview_view_layout_width"
+        android:layout_height="@dimen/page_preview_view_layout_height"
+        android:layout_marginTop="@dimen/page_preview_view_layout_margin_top"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/page_arrow_right_bg_selector"
+        android:clickable="true"
+        android:visibility="invisible"
+        />
+
+
+    <com.cookingshow.view.ItemCursorView
+        android:id="@+id/cursor_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        />
+
+    <include layout="@layout/tv_loading"/>
+
+</RelativeLayout>
+

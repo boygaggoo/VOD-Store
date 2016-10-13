@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.cookingshow.navigation.MainNavigationItem
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/navi_item_bg_selector"
+    >
+
+<!--    <ImageView
+        android:id="@+id/navi_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/navi_apps_icon"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:clickable="false"
+        android:duplicateParentState="true"
+        />-->
+
+    <TextView
+        android:id="@+id/navi_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:clickable="false"
+        android:duplicateParentState="true"
+        />
+
+
+    <TextView
+        android:id="@+id/navi_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/navi_icon"
+        android:textSize= "@dimen/navigation_bar_item_text_size"
+        android:textColor="@color/main_menu_text_selected"        
+        android:layout_centerVertical="true"
+        android:duplicateParentState="true"
+        />
+
+</com.cookingshow.navigation.MainNavigationItem>

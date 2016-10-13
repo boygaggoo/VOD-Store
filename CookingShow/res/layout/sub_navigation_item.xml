@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cookingshow.navigation.SubNavigationItem
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    >
+
+    <TextView
+        android:id="@+id/sub_navi_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sub_navigation_bar_item_text_size"
+        android:textColor="@color/sub_menu_text_selected"
+        android:gravity="center"
+        android:duplicateParentState="true"
+        />
+
+</com.cookingshow.navigation.SubNavigationItem>

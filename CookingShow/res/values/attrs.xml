@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="MagicTextView">
+		<attr name="innerShadowColor" format="color"/>
+		<attr name="innerShadowRadius" format="float"/>
+		<attr name="innerShadowDx" format="float"/>
+		<attr name="innerShadowDy" format="float"/>
+		
+		<attr name="outerShadowColor" format="color"/>
+		<attr name="outerShadowRadius" format="float"/>
+		<attr name="outerShadowDx" format="float"/>
+		<attr name="outerShadowDy" format="float"/>
+		
+		<attr name="typeface" format="string" />
+		
+		<attr name="foreground" format="reference|color"/>
+		<attr name="background_" format="reference|color"/>
+		
+		<attr name="strokeWidth" format="float" />
+		<attr name="strokeMiter" format="float" />
+		<attr name="strokeColor" format="color" />
+		<attr name="strokeJoinStyle">
+		    <enum name="miter" value="0" />
+		    <enum name="bevel" value="1" />
+		    <enum name="round" value="2" />
+		</attr>
+	</declare-styleable>
+
+    <declare-styleable name="AdItemLayout">
+        <attr name="adType">
+            <enum name="index1" value="0" />
+            <enum name="index2" value="1" />
+            <enum name="top" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CornerImageView">
+        <attr name="cornerRadius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="riv_corner_radius" format="dimension" />
+        <attr name="riv_border_width" format="dimension" />
+        <attr name="riv_border_color" format="color" />
+        <attr name="riv_mutate_background" format="boolean" />
+        <attr name="riv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+        <attr name="riv_tile_mode">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_x">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_y">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="BigButton">
+        <attr name="text_font" format="dimension" />
+        <attr name="text_color" format="color|reference" />
+        <attr name="button_icon" format="reference" />
+        <attr name="button_text" format="reference" />
+    </declare-styleable>
+
+</resources>

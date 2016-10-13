@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >           
+    <ImageView
+        android:id="@+id/qrimg"
+        android:layout_width="@dimen/weixin_qr_layout_width"
+        android:layout_height="@dimen/weixin_qr_layout_width"
+        android:background="#121926"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#121926"
+        android:focusable="false"
+        android:layout_below="@+id/qrimg"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/weixin_reply"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/weixin_text_size"/>
+</RelativeLayout>

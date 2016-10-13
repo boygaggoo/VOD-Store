@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/help_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/page_help_icon"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/help_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/page_help_text_size"
+        android:textColor="#999999"
+        android:layout_marginLeft="@dimen/page_help_layout_margin_left"
+        android:gravity="left"
+        android:layout_gravity="center_vertical"
+        />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    >
+
+    <com.cookingshow.view.AppGridLayout
+        android:id="@+id/app_grid_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clipChildren="false"
+        >
+
+    </com.cookingshow.view.AppGridLayout>
+
+    <include layout="@layout/tv_loading" />
+
+    <TextView
+        android:id="@+id/tv_no_data_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:text="@string/tv_nodata"
+        android:textSize="40sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
