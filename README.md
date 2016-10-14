@@ -11,6 +11,8 @@ network: please focus on the cache which create files in the app data path(*****
 
 service: the app send http request to server to pull viode sources which are stored in the sqlite by android provider.
 
+push: It contains some next activities, especially AlbumDetailInfo.java and AppDetailInfo.java. They describe the video playback by MediaPlayer, SurfaceView and SurfaceHolder. All the members can refer to the playback feature:play,pause,seek, zoom in, zoom out.
+
 
 the follow folds are related to the UI.
 
@@ -32,3 +34,11 @@ view: it relates to the custom control.
 In addition, the feature of user statistics is supported by Umeng server in China which provides some sdk. 
 
 ps: if you want to refer to the server code, please also view another repository: VOD-Store-server.
+
+
+![image](https://github.com/hansonLGE/VOD-Store/z_introduce_picture/Screenshot_2016-10-13-01.png)
+![image](https://github.com/hansonLGE/VOD-Store/z_introduce_picture/Screenshot_2016-10-13-02.png)
+![image](https://github.com/hansonLGE/VOD-Store/z_introduce_picture/Screenshot_2016-10-13-03.png)
+![image](https://github.com/hansonLGE/VOD-Store/z_introduce_picture/Screenshot_2016-10-13-04.png)
+![image](https://github.com/hansonLGE/VOD-Store/z_introduce_picture/Screenshot_2016-10-13-05.png)
+
