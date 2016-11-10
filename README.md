@@ -36,10 +36,8 @@ In addition, the feature of user statistics is supported by Umeng server in Chin
 ps: if you want to refer to the server code, please also view another repository: VOD-Store-server.
 
 
-![image](https://github.com/hansonLGE/VOD-Store/blob/master/z_introduce_picture/Screenshot_2016-10-13-01.png)
-![image](https://github.com/hansonLGE/VOD-Store/blob/master/z_introduce_picture/Screenshot_2016-10-13-02.png)
-![image](https://github.com/hansonLGE/VOD-Store/blob/master/z_introduce_picture/Screenshot_2016-10-13-03.png)
-![image](https://github.com/hansonLGE/VOD-Store/blob/master/z_introduce_picture/Screenshot_2016-10-13-04.png)
+![image](https://github.com/hansonLGE/VOD-Store/blob/master/z_introduce_picture/1.png)
+![image](https://github.com/hansonLGE/VOD-Store/blob/master/z_introduce_picture/2.png)
 ![image](https://github.com/hansonLGE/VOD-Store/blob/master/z_introduce_picture/Screenshot_2016-10-13-05.png)
 ![image](https://github.com/hansonLGE/VOD-Store/blob/master/z_introduce_picture/Screenshot_2016-10-13-06.png)
 
